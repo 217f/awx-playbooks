@@ -13,5 +13,5 @@
 
   - name: Ensure {{ local_account_username }} does not exist
     win_user:
-      name: {{ local_account_username }}
+      name: "{{ local_account_username }}"
       state: absent
