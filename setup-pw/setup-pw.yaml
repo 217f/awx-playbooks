@@ -9,5 +9,7 @@
         groups: "Remotedesktopbenutzer"
         update_password: on_create
         password_expired: true
-    - name: ping
-      win_ping:
+    - name: ps
+      ansible.windows.win_command: powershell.exe -
+        args:
+        stdin: Write-Host test
