@@ -9,7 +9,5 @@
         groups: "Remotedesktopbenutzer"
         update_password: on_create
         password_expired: true
-    - name: ps
-      ansible.windows.win_command: powershell.exe -
-        args:
-        stdin: Write-Host test
+    - name: Run powershell script
+      script: files/helloworld.ps1
