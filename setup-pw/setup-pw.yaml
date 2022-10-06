@@ -4,6 +4,7 @@
     - name: create local user
       ansible.windows.win_user:
         name: "{{ local_account_username }}"
+        fullname: "{{ local_account_fullname }}"
         password: "{{ local_account_password }}"
         groups: "Remotedesktopbenutzer"
         update_password: on_create
