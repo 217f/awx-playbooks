@@ -9,6 +9,5 @@
         groups: "Remotedesktopbenutzer"
         update_password: on_create
         password_expired: true
-          tasks:
     - name: ping
       win_ping:
