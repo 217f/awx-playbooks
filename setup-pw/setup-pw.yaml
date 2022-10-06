@@ -9,7 +9,7 @@
       password: "{{ local_account_password }}"
       state: present
       groups:
-        - Remotedestkopbenutzer
+        - Remotedesktopbenutzer
 
   - name: Ensure {{ local_account_username }} does not exist
     win_user:
