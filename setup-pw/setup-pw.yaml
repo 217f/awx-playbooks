@@ -3,11 +3,13 @@
   tasks:
 
   - name: Create new local account
-    win_user:
+    ansible.windows.win_user:
       name: "{{ local_account_username }}"
       fullname: "{{ local_account_fullname }}"
       password: "{{ local_account_password }}"
       state: present
+      update_password: on_create
+      password_expired: true
       groups:
         - Remotedesktopbenutzer
 
