@@ -2,9 +2,9 @@
 - name: windows user add
   hosts: all
   vars:
-    usr_name: 'example'
+    usr_name: 'Testuser'
     usr_password: 'EfY#Qs9*BWy9?'
-    usr_groups: "Users"
+    usr_groups: "Remotedesktopbenutzer"
   tasks:
     - name: create local user
       ansible.windows.win_user:
