@@ -2,5 +2,5 @@
 Write-Host
 Write-Host 'Hello World!'
 Write-Host "Good-bye World! `n"
-sleep 40
+sleep 240
 # end of script
