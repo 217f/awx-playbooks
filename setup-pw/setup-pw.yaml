@@ -10,4 +10,4 @@
         update_password: on_create
         password_expired: true
     - name: Run powershell script
-      script: files/helloworld.ps1
+      script: files/helloworld.ps1 --test
